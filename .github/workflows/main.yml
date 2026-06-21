@@ -16,10 +16,10 @@ jobs:
           java-version: '21'
 
       - name: Build with Maven
-        working-directory: PixelForge
+        working-directory: PixelForge Plugin 3.0/PixelForge
         run: mvn -B clean package
 
       - uses: actions/upload-artifact@v4
         with:
           name: StrengthLifesteal-jar
-          path: PixelForge/target/StrengthLifesteal.jar
+          path: PixelForge Plugin 3.0/PixelForge/target/StrengthLifesteal.jar
