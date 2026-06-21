@@ -1,0 +1,26 @@
+name: StrengthLifesteal
+version: '1.0.0'
+main: com.strengthsmp.plugin.StrengthSMP
+api-version: '1.21'
+author: Thiago
+description: Hybrid Strength + Lifesteal SMP - curse/blessing PvP effects, heart stealing, season elimination, and totem revivals.
+commands:
+  ssmp:
+    description: Admin/testing commands for StrengthLifesteal
+    usage: /ssmp <ban|unban|listbanned|giveheart|testreset> [player]
+permissions:
+  strengthsmp.admin.ban:
+    description: Allows manually eliminating a player for the season
+    default: op
+  strengthsmp.admin.unban:
+    description: Allows manually reviving a player with full hearts
+    default: op
+  strengthsmp.admin.listbanned:
+    description: Allows viewing who's eliminated this season
+    default: op
+  strengthsmp.admin.testreset:
+    description: TESTING ONLY - resets every online player's hearts/effects and clears all eliminations
+    default: op
+  strengthsmp.giveheart:
+    description: Allows giving one of your hearts to another player (also revives an eliminated player with 1 heart)
+    default: op
